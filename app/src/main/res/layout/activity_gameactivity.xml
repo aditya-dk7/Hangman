@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <Button
+        android:id="@+id/letterA"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="3dp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/black"
+        android:text="@string/a"
+        android:textColor="@color/white"
+        android:theme="@style/HangmanTheme"
+        app:layout_constraintBottom_toTopOf="@+id/letterG"
+        app:layout_constraintEnd_toStartOf="@+id/letterB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guessTheWord" />
+
+    <Button
+        android:id="@+id/letterC"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="3dp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/black"
+        android:text="@string/c"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/letterI"
+        app:layout_constraintEnd_toStartOf="@+id/letterD"
+        app:layout_constraintStart_toEndOf="@+id/letterB"
+        app:layout_constraintTop_toBottomOf="@+id/guessTheWord" />
+
+    <Button
+        android:id="@+id/letterE"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="3dp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/black"
+        android:text="@string/e"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/letterK"
+        app:layout_constraintEnd_toStartOf="@+id/letterF"
+        app:layout_constraintStart_toEndOf="@+id/letterD"
+        app:layout_constraintTop_toBottomOf="@+id/guessTheWord" />
+
+    <Button
+        android:id="@+id/letterD"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="3dp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/black"
+        android:text="@string/d"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/letterJ"
+        app:layout_constraintEnd_toStartOf="@+id/letterE"
+        app:layout_constraintStart_toEndOf="@+id/letterC"
+        app:layout_constraintTop_toBottomOf="@+id/guessTheWord" />
+
+    <Button
+        android:id="@+id/letterF"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/black"
+        android:text="@string/f"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/letterL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/letterE"
+        app:layout_constraintTop_toBottomOf="@+id/guessTheWord" />
+
+    <Button
+        android:id="@+id/letterB"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="3dp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/black"
+        android:text="@string/b"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/letterH"
+        app:layout_constraintEnd_toStartOf="@+id/letterC"
+        app:layout_constraintStart_toEndOf="@+id/letterA"
+        app:layout_constraintTop_toBottomOf="@+id/guessTheWord" />
+
+    <Button
+        android:id="@+id/letterG"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="3dp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/black"
+        android:text="@string/g"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/letterM"
+        app:layout_constraintEnd_toStartOf="@+id/letterH"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/letterA" />
+
+    <Button
+        android:id="@+id/letterM"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="3dp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/black"
+        android:text="@string/m"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/letterS"
+        app:layout_constraintEnd_toStartOf="@+id/letterN"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/letterG" />
+
+    <Button
+        android:id="@+id/letterS"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="3dp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/black"
+        android:text="@string/s"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/letterY"
+        app:layout_constraintEnd_toStartOf="@+id/letterT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/letterM" />
+
+    <Button
+        android:id="@+id/letterY"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="10dp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/black"
+        android:text="@string/y"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/letterZ"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/letterU" />
+
+    <Button
+        android:id="@+id/letterH"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="3dp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/black"
+        android:text="@string/h"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/letterN"
+        app:layout_constraintEnd_toStartOf="@+id/letterI"
+        app:layout_constraintStart_toEndOf="@+id/letterG"
+        app:layout_constraintTop_toBottomOf="@+id/letterB" />
+
+    <Button
+        android:id="@+id/letterN"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="3dp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/black"
+        android:text="@string/n"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/letterT"
+        app:layout_constraintEnd_toStartOf="@+id/letterO"
+        app:layout_constraintStart_toEndOf="@+id/letterM"
+        app:layout_constraintTop_toBottomOf="@+id/letterH" />
+
+    <Button
+        android:id="@+id/letterT"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="3dp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/black"
+        android:text="@string/t"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/letterY"
+        app:layout_constraintEnd_toStartOf="@+id/letterU"
+        app:layout_constraintStart_toEndOf="@+id/letterS"
+        app:layout_constraintTop_toBottomOf="@+id/letterN" />
+
+    <Button
+        android:id="@+id/letterZ"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="10dp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/black"
+        android:text="@string/z"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/letterY"
+        app:layout_constraintTop_toBottomOf="@+id/letterV" />
+
+    <Button
+        android:id="@+id/letterO"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="3dp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/black"
+        android:text="@string/o"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/letterU"
+        app:layout_constraintEnd_toStartOf="@+id/letterP"
+        app:layout_constraintStart_toEndOf="@+id/letterN"
+        app:layout_constraintTop_toBottomOf="@+id/letterI" />
+
+    <Button
+        android:id="@+id/letterU"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="3dp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/black"
+        android:text="@string/u"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/letterY"
+        app:layout_constraintEnd_toStartOf="@+id/letterV"
+        app:layout_constraintStart_toEndOf="@+id/letterT"
+        app:layout_constraintTop_toBottomOf="@+id/letterO" />
+
+    <Button
+        android:id="@+id/letterI"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="3dp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/black"
+        android:text="@string/i"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/letterO"
+        app:layout_constraintEnd_toStartOf="@+id/letterJ"
+        app:layout_constraintStart_toEndOf="@+id/letterH"
+        app:layout_constraintTop_toBottomOf="@+id/letterC" />
+
+    <Button
+        android:id="@+id/letterJ"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="3dp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/black"
+        android:text="@string/j"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/letterP"
+        app:layout_constraintEnd_toStartOf="@+id/letterK"
+        app:layout_constraintStart_toEndOf="@+id/letterI"
+        app:layout_constraintTop_toBottomOf="@+id/letterD" />
+
+    <Button
+        android:id="@+id/letterV"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="3dp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/black"
+        android:text="@string/v"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/letterZ"
+        app:layout_constraintEnd_toStartOf="@+id/letterW"
+        app:layout_constraintStart_toEndOf="@+id/letterU"
+        app:layout_constraintTop_toBottomOf="@+id/letterP" />
+
+    <Button
+        android:id="@+id/letterP"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="3dp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/black"
+        android:text="@string/p"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/letterV"
+        app:layout_constraintEnd_toStartOf="@+id/letterQ"
+        app:layout_constraintStart_toEndOf="@+id/letterO"
+        app:layout_constraintTop_toBottomOf="@+id/letterJ" />
+
+    <Button
+        android:id="@+id/letterK"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="3dp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/black"
+        android:text="@string/k"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/letterQ"
+        app:layout_constraintEnd_toStartOf="@+id/letterL"
+        app:layout_constraintStart_toEndOf="@+id/letterJ"
+        app:layout_constraintTop_toBottomOf="@+id/letterE" />
+
+    <Button
+        android:id="@+id/letterQ"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="3dp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/black"
+        android:text="@string/q"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/letterW"
+        app:layout_constraintEnd_toStartOf="@+id/letterR"
+        app:layout_constraintStart_toEndOf="@+id/letterP"
+        app:layout_constraintTop_toBottomOf="@+id/letterK" />
+
+    <Button
+        android:id="@+id/letterW"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="3dp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/black"
+        android:text="@string/w"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/letterZ"
+        app:layout_constraintEnd_toStartOf="@+id/letterX"
+        app:layout_constraintStart_toEndOf="@+id/letterV"
+        app:layout_constraintTop_toBottomOf="@+id/letterQ" />
+
+    <Button
+        android:id="@+id/letterL"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/black"
+        android:text="@string/l"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/letterR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/letterK"
+        app:layout_constraintTop_toBottomOf="@+id/letterF" />
+
+    <Button
+        android:id="@+id/letterR"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/black"
+        android:text="@string/r"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/letterX"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/letterQ"
+        app:layout_constraintTop_toBottomOf="@+id/letterL" />
+
+    <Button
+        android:id="@+id/letterX"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginEnd="15dp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/black"
+        android:text="@string/x"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/letterZ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/letterW"
+        app:layout_constraintTop_toBottomOf="@+id/letterR" />
+
+    <ImageView
+        android:id="@+id/hangManImage"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_marginTop="50dp"
+        android:autoSizeTextType="uniform"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/hangman01"
+        app:layout_constraintBottom_toTopOf="@+id/guessTheWord"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/guessTheWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="350dp"
+        android:autoSizeMaxTextSize="23sp"
+        android:autoSizeMinTextSize="20sp"
+        android:autoSizeTextType="none"
+        android:gravity="center_vertical"
+        android:text="@string/guessString"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hangManImage" />
+
+    <ImageView
+        android:id="@+id/hintBulb"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bulbhint" />
+</androidx.constraintlayout.widget.ConstraintLayout>
